@@ -1,8 +1,21 @@
 const fs = require("fs");
 const path = require("path");
 const chokidar = require("chokidar");
+const Yaml = require("yamljs");
 const args = process.argv.slice(2);
 const docs = path.join(args[0], "docs");
+const yamlFile = path.join(args[0], ".yaml");
+
+function parseYaml() {
+  const res = Yaml.parse(fs.readFileSync(yamlFile, "utf8"));
+  fs.writeFileSync(
+    path.join(__dirname, ".meta.js"),
+    `module.exports = ${JSON.stringify(res)}`,
+    {
+      encoding: "utf-8",
+    }
+  );
+}
 
 function start() {
   const res = [];
@@ -51,13 +64,22 @@ function start() {
 }
 
 if (args[1] === "-w") {
-  let time = null;
+  let time1 = null;
+  let time2 = null;
+
   chokidar.watch(docs).on("all", function (e) {
-    if (time) {
+    if (time1) {
       clearTimeout();
     }
-    time = setTimeout(start, 10);
+    time1 = setTimeout(start, 10);
+  });
+  chokidar.watch(yamlFile).on("all", function (e) {
+    if (time2) {
+      clearTimeout();
+    }
+    time2 = setTimeout(parseYaml, 10);
   });
 } else {
   start();
+  parseYaml();
 }

@@ -1,10 +1,23 @@
 #!/usr/bin/env node
 const { spawn } = require("child_process");
 const path = require("path");
-const argv = process.argv.slice(2);
+const fs = require("fs-extra");
 const cwd = process.cwd();
-
+const argv = process.argv.slice(2);
 const type = argv[0];
+const yamlFile = path.join(cwd, ".yaml");
+const copydir = require("copy-dir");
+
+if (type === "init") {
+  if (!fs.existsSync(yamlFile)) {
+  }
+  process.exit();
+}
+
+if (!fs.existsSync(yamlFile)) {
+  console.log("请使用【cb init】初始化配置文件");
+  process.exit();
+}
 
 if (type === "dev") {
   spawn("node", ["server.js", "dev", cwd], {
@@ -39,6 +52,15 @@ if (type === "build") {
       });
       compiler.on("close", resolve);
     });
-    console.log("end");
+    const meta = require(path.join(__dirname, "..", ".meta.js"));
+    copydir.sync(
+      path.join(__dirname, "..", "dist"),
+      path.join(cwd, meta.output || "public"),
+      {
+        utimes: true,
+        mode: true,
+        cover: true,
+      }
+    );
   })();
 }
