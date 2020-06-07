@@ -1,0 +1,15 @@
+assetPrefixs: /static/
+
+logo: https://github.com/fluidicon.png
+
+name: 前端技术摘要
+
+description: 描述
+
+add: https://github.com/Topthinking/techsum/issues/issues/1
+
+addDesc: 快速添加您的技术摘要
+
+edit: https://github.com/Topthinking/techsum/issues/edit/master
+
+gitlab: https://github.com/Topthinking/techsum
