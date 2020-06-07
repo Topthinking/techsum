@@ -1,4 +1,4 @@
-# Technical Summary
+# Technical Summary ∙  [![version](https://img.shields.io/npm/v/techsum.svg)](https://www.npmjs.com/package/techsum)
 
 ```shell
 # 安装依赖
