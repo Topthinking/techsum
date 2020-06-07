@@ -3,6 +3,7 @@ import * as React from "react";
 import { Context } from "../store";
 
 import "./search.scss";
+import gitlabImg from "./assets/gitlab.jpg";
 
 let time = null;
 
@@ -95,7 +96,7 @@ const Search = () => {
         EDIT
       </a>
       <a href={state.config.gitlab || state.config.github} target="_blank">
-        <img src="https://fdfs.xmcdn.com/group80/M06/31/6D/wKgPEV7KNUfigObtAAAxu4tXHMM600.jpg" />
+        <img src={gitlabImg} />
       </a>
 
       <div
