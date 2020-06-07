@@ -1,0 +1,9 @@
+node_modules
+yarn.lock
+yarn-error.log
+.docs.js
+.meta.js
+.award
+.cmd
+dist
+public

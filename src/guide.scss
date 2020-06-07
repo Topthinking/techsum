@@ -1,0 +1,42 @@
+.guide {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 9999;
+  .mask-guide-search {
+    background-color: #000;
+    position: fixed;
+    right: 255px;
+    top: -12px;
+    img {
+      transform: rotateX(60deg);
+    }
+    p {
+      color: #fff;
+      font-size: 28px;
+      position: fixed;
+      font-weight: bolder;
+      top: 120px;
+      right: 300px;
+    }
+  }
+
+  .mask-guide-add {
+    background-color: #000;
+    position: fixed;
+    left: 142px;
+    top: 62px;
+    p {
+      color: #fff;
+      font-size: 26px;
+      font-weight: bolder;
+      position: fixed;
+      top: 51px;
+      left: 460px;
+    }
+  }
+}

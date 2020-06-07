@@ -1,0 +1,18 @@
+{
+  "name": "cakebot",
+  "version": "0.0.1",
+  "description": "",
+  "bin": {
+    "cb": "./bin/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "award": "^0.23.0",
+    "award-scripts": "^0.23.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "map": true
+}

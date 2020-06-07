@@ -1,0 +1,7 @@
+.docs.js
+.meta.js
+.cmd
+yarn-error.log
+yarn.lock
+dist
+node_modules

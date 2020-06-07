@@ -1,0 +1,106 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+  width: 150px;
+}
+.list {
+  position: relative;
+}
+.icon-add {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  width: 24px;
+  height: 24px;
+}
+.header {
+  margin: 20px;
+  margin-bottom: 10px;
+  img {
+    border-radius: 4px;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+    height: 84px;
+    object-fit: cover;
+    width: 84px;
+  }
+  h1 {
+    color: #383838;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  p {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    color: #a6a6a6;
+    display: -webkit-box;
+    font-size: 0.75rem;
+    line-height: 1.67;
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.node {
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: relative;
+  user-select: none;
+  .wrapper {
+    cursor: pointer;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 20px;
+    .content {
+      -webkit-box-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      .before-icon {
+        color: #a6a6a6;
+        flex: 0 0 20px;
+        height: 20px;
+        justify-content: center;
+        width: 20px;
+        font-weight: 900;
+        align-items: center;
+        display: flex;
+      }
+      .node-title {
+        -webkit-box-flex: 1;
+        color: grey;
+        display: inline-block;
+        flex: 1 1 0;
+        margin-left: 8px;
+        overflow: hidden;
+        pointer-events: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  .wrapper.active {
+    background: rgba(107, 112, 184, 0.1);
+    font-weight: 500;
+  }
+}
+.node:hover {
+  background: hsla(0, 0%, 89.8%, 0.4);
+}
+
+.badge {
+  width: 100px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 18px;
+}
