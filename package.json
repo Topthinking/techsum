@@ -1,15 +1,15 @@
 {
-  "name": "award-blog",
-  "version": "0.0.2",
+  "name": "techsum",
+  "version": "0.0.1",
   "description": "",
-  "homepage": "https://github.com/Topthinking/award-blog",
-  "bugs": "https://github.com/Topthinking/award-blog/issues",
+  "homepage": "https://github.com/Topthinking/techsum",
+  "bugs": "https://github.com/Topthinking/techsum/issues",
   "bin": {
-    "award-blog": "./bin/index.js"
+    "ts": "./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Topthinking/award-blog.git"
+    "url": "https://github.com/Topthinking/techsum.git"
   },
   "keywords": [],
   "author": "",

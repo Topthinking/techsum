@@ -6,7 +6,7 @@ export default {
     [
       "award-plugin-webpack-include",
       {
-        include: /node_modules\/award-blog/,
+        include: /node_modules\/techsum/,
       },
     ],
   ],
