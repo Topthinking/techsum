@@ -1,6 +1,6 @@
 # Technical Summary ∙  [![version](https://img.shields.io/npm/v/techsum.svg)](https://www.npmjs.com/package/techsum)
 
-## 使用
+## 使用说明
 ```shell
 # 安装依赖
 $ npm run techsum
@@ -12,12 +12,14 @@ $ yarn ts dev
 $ yarn ts build
 ```
 
-## 开发
+## 开发指南
 
-- `windows`
+```shell
+# 执行命令
 
-  ```
-	.\test\ts dev
-	```
+# 启动开发页面
+./test/ts dev
 
-- ``
+# 编译结果
+./test/ts build
+```
