@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "award": "^0.23.0",
+    "award-plugin-webpack-include": "^0.0.1",
     "award-scripts": "^0.23.0",
     "copy-dir": "^1.3.0",
     "react": "^16.13.1",
