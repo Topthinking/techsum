@@ -1,8 +1,6 @@
 import { start } from "award";
 import App from "./src/app";
 import Provider from "./store";
-import docs from "./.docs.js";
-import meta from "./.meta.js";
 
 <award-style global>{`
 	* {
@@ -18,8 +16,22 @@ import meta from "./.meta.js";
 	}
 `}</award-style>;
 
-start(
-  <Provider data={{ meta, docs }}>
-    <App />
-  </Provider>
-);
+Promise.all([
+  new Promise((resolve) => {
+    import("./.docs.js").then((res) => {
+      resolve(res.default || res);
+    });
+  }),
+  new Promise((resolve) => {
+    import("./.meta.js").then((res) => {
+      resolve(res.default || res);
+    });
+  }),
+]).then((data) => {
+  const [docs, meta] = data;
+  start(
+    <Provider data={{ meta, docs }}>
+      <App />
+    </Provider>
+  );
+});

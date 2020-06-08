@@ -9,6 +9,7 @@ if (os.type() === "Windows_NT") {
 
 export default {
   assetPrefixs: config.assetPrefixs,
+  mode: "client",
   plugins: [
     [
       "award-plugin-webpack-include",
