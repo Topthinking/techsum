@@ -9,7 +9,7 @@ const Guide = () => {
   const { state, dispatch } = React.useContext(Context);
 
   React.useEffect(() => {
-    // localStorage.clear();
+    localStorage.clear();
     const tag = localStorage.getItem(state.config.localStorage);
     if (!tag) {
       localStorage.setItem(state.config.localStorage, 1);
@@ -34,10 +34,11 @@ const Guide = () => {
         });
       }}
     >
+      <div className="mask"></div>
       {state.guide === 0 ? (
         <div className="mask-guide-search">
           <img src={searchSvg} />
-          <p>快来搜索您需要的技术指导</p>
+          <p>快来搜索您需要的技术指导，键盘快捷键【S】即可快速唤起</p>
         </div>
       ) : null}
       {state.guide === 1 ? (

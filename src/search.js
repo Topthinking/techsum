@@ -67,6 +67,16 @@ const Search = () => {
     }
   }, [showSearch]);
 
+  React.useEffect(() => {
+    document.addEventListener("keydown", function (e) {
+      if (document.getElementsByClassName("guide-show").length === 0) {
+        if (e.keyCode === 83 && !showSearch) {
+          setShowSearch(true);
+        }
+      }
+    });
+  }, []);
+
   const filename = state.data[state.active].filename;
   return (
     <>

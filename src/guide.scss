@@ -4,14 +4,22 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #000;
-  opacity: 0.6;
-  z-index: 9999;
-  .mask-guide-search {
+  z-index: 1;
+  .mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: #000;
+    opacity: 0.6;
+    z-index: 2;
+  }
+  .mask-guide-search {
     position: fixed;
     right: 255px;
     top: -12px;
+    z-index: 3;
     img {
       transform: rotateX(60deg);
     }
@@ -26,10 +34,10 @@
   }
 
   .mask-guide-add {
-    background-color: #000;
     position: fixed;
     left: 133px;
     top: 28px;
+    z-index: 3;
     p {
       color: #fff;
       font-size: 26px;
