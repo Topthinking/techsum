@@ -9,7 +9,7 @@ const Guide = () => {
   const { state, dispatch } = React.useContext(Context);
 
   React.useEffect(() => {
-    localStorage.clear();
+    // localStorage.clear();
     const tag = localStorage.getItem(state.config.localStorage);
     if (!tag) {
       localStorage.setItem(state.config.localStorage, 1);
