@@ -70,8 +70,19 @@ const Search = () => {
   React.useEffect(() => {
     document.addEventListener("keydown", function (e) {
       if (document.getElementsByClassName("guide-show").length === 0) {
-        if (e.keyCode === 83 && !showSearch) {
-          setShowSearch(true);
+        if (e.keyCode === 27) {
+          // esc
+          setShowSearch(false);
+        } else {
+          if (
+            // s
+            (e.keyCode === 83 && !showSearch) ||
+            // command + f
+            (e.keyCode === 70 && e.metaKey)
+          ) {
+            e.preventDefault();
+            setShowSearch(true);
+          }
         }
       }
     });
