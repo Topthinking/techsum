@@ -74,12 +74,10 @@ const Search = () => {
           // esc
           setShowSearch(false);
         } else {
-          if (
-            // s
-            (e.keyCode === 83 && !showSearch) ||
-            // command + f
-            (e.keyCode === 70 && e.metaKey)
-          ) {
+          if (e.keyCode === 83) {
+            setShowSearch(true);
+          }
+          if (e.keyCode === 70 && e.metaKey) {
             e.preventDefault();
             setShowSearch(true);
           }
