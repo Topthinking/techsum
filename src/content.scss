@@ -17,6 +17,10 @@
   padding: 60px 40px;
 }
 
+.items {
+  min-height: calc(100vh - 130px);
+}
+
 ul {
   margin-left: 40px;
   margin-top: 10px;

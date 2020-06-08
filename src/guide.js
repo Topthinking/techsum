@@ -5,15 +5,14 @@ import addSvg from "./add.drawio.svg";
 
 import "./guide.scss";
 
-const guide = "qd-guide";
-
 const Guide = () => {
   const { state, dispatch } = React.useContext(Context);
 
   React.useEffect(() => {
-    const tag = localStorage.getItem(guide);
+    // localStorage.clear();
+    const tag = localStorage.getItem(state.config.localStorage);
     if (!tag) {
-      localStorage.setItem(guide, 1);
+      localStorage.setItem(state.config.localStorage, 1);
       dispatch({
         type: "changeGuide",
         payload: 0,
