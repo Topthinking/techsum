@@ -41,7 +41,11 @@ const Guide = () => {
         </div>
       ) : null}
       {state.guide === 1 ? (
-        <div className="mask-guide-add">
+        <div
+          className={
+            "mask-guide-add " + (state.config.pipeline ? "pipeline" : "")
+          }
+        >
           <img src={addSvg} />
           <p>快来分享您的技术清单</p>
         </div>
