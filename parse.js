@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const chokidar = require("chokidar");
 const Yaml = require("yamljs");
+const pinyin = require("pinyin");
 const args = process.argv.slice(2);
 const docs = path.join(args[0], "docs");
 const yamlFile = path.join(args[0], ".yaml");
@@ -33,17 +34,33 @@ function start() {
       };
       cr.map((item) => {
         if (/^#\s/.test(item)) {
-          d.name = item.replace(/^#\s(.*)[\s\S]?/, "$1");
+          const res = item.replace(/^#\s(.*)[\s\S]?/, "$1");
+          d.name = res;
+          d.pinyin = pinyin(res, {
+            style: pinyin.STYLE_NORMAL,
+          });
         } else {
           if (/^##\s/.test(item)) {
             i++;
+            const res = item.replace(/^##\s(.*)[\s\S]?/, "$1");
             v[i] = {
-              name: item.replace(/^##\s(.*)[\s\S]?/, "$1"),
+              name: res,
               id: `${fileIndex}-${i}`,
               children: [],
+              pinyin: [
+                pinyin(res, {
+                  style: pinyin.STYLE_NORMAL,
+                }),
+              ],
             };
           } else if (i > 0 && /^-\s/.test(item)) {
-            v[i].children.push(item.replace(/^-\s(.*)[\s\S]?/, "$1"));
+            const res = item.replace(/^-\s(.*)[\s\S]?/, "$1");
+            v[i].pinyin.push(
+              pinyin(res, {
+                style: pinyin.STYLE_NORMAL,
+              })
+            );
+            v[i].children.push(res);
           }
         }
       });

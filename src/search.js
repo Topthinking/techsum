@@ -45,6 +45,20 @@ const Search = () => {
             };
             children.map((t) => {
               let exist = false;
+              t.pinyin.map((py) => {
+                let st = "";
+                py.map((_py) => {
+                  _py.map((p) => {
+                    st += p;
+                    if (ref.current === p) {
+                      exist = true;
+                    }
+                  });
+                });
+                if (new RegExp(ref.current, "i").test(st)) {
+                  exist = true;
+                }
+              });
               if (new RegExp(ref.current, "i").test(t.name)) {
                 exist = true;
               }
