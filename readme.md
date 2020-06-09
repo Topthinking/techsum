@@ -1,6 +1,7 @@
-# Technical Summary ∙  [![version](https://img.shields.io/npm/v/techsum.svg)](https://www.npmjs.com/package/techsum)
+# Technical Summary ∙ [![version](https://img.shields.io/npm/v/techsum.svg)](https://www.npmjs.com/package/techsum)
 
 ## 使用说明
+
 ```shell
 # 安装依赖
 $ npm run techsum
