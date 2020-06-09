@@ -1,7 +1,11 @@
 .docs.js
 .meta.js
-.cmd
+.vscode
+
+dist
+docs
+node_modules
+public
+_config.yml
 yarn-error.log
 yarn.lock
-dist
-node_modules

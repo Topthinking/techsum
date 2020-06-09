@@ -85,7 +85,6 @@ img {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
   color: #ccc;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-color: #e4e4e5;
   color: #ccc;
   padding: 0 16px;
   .icon {
@@ -116,6 +115,13 @@ input:focus {
   width: 100%;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  p {
+    padding: 10px 20px;
+    b {
+      padding: 0px 5px;
+      color: salmon;
+    }
+  }
   ul {
     margin: 10px 20px;
     margin-left: 30px;
@@ -133,16 +139,5 @@ input:focus {
   cursor: pointer;
 }
 #search-result::-webkit-scrollbar {
-  width: 4px;
-}
-#search-result::-webkit-scrollbar-track {
-  background: rgb(239, 239, 239);
-  border-radius: 10px;
-}
-#search-result::-webkit-scrollbar-thumb {
-  background: #bfbfbf;
-  border-radius: 102px;
-}
-#search-result::-webkit-scrollbar-thumb:hover {
-  background: #333;
+  width: 0px;
 }

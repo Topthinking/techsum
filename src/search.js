@@ -12,12 +12,18 @@ const Search = () => {
 
   const searchContent = React.useRef(null);
   const inputEl = React.useRef(null);
+
+  const [total, setTotal] = React.useState(0);
   const [showSearch, setShowSearch] = React.useState(false);
   const [searchV, setSearchV] = React.useState("");
   const [searchRes, setSearchRes] = React.useState([]);
 
+  const ref = React.useRef("");
+
   React.useEffect(() => {
+    ref.current = searchV;
     if (searchV === "") {
+      setTotal(0);
       setSearchRes([]);
     } else {
       if (time) {
@@ -25,38 +31,46 @@ const Search = () => {
       }
       time = setTimeout(() => {
         clearTimeout(time);
-        const nT = [];
-        state.data.map((text) => {
-          let existT = false;
-          const { children, ...rests } = text;
-          const _t = {
-            children: [],
-          };
-          children.map((t) => {
-            let exist = false;
-            if (new RegExp(searchV, "i").test(t.name)) {
-              exist = true;
-            }
-            t.children.map((item) => {
-              if (
-                !/http(s)?\:\/\//.test(item) &&
-                new RegExp(searchV, "i").test(item)
-              ) {
+        if (ref.current === "") {
+          setTotal(0);
+          setSearchRes([]);
+        } else {
+          const nT = [];
+          let _total = 0;
+          state.data.map((text) => {
+            let existT = false;
+            const { children, ...rests } = text;
+            const _t = {
+              children: [],
+            };
+            children.map((t) => {
+              let exist = false;
+              if (new RegExp(ref.current, "i").test(t.name)) {
                 exist = true;
               }
+              t.children.map((item) => {
+                if (
+                  !/http(s)?\:\/\//.test(item) &&
+                  new RegExp(ref.current, "i").test(item)
+                ) {
+                  exist = true;
+                }
+              });
+              if (exist) {
+                _total++;
+                existT = true;
+                _t.children.push(t);
+              }
             });
-            if (exist) {
-              existT = true;
-              _t.children.push(t);
+
+            if (existT) {
+              Object.assign(_t, rests);
+              nT.push(_t);
             }
           });
-
-          if (existT) {
-            Object.assign(_t, rests);
-            nT.push(_t);
-          }
-        });
-        setSearchRes(nT);
+          setTotal(_total);
+          setSearchRes(nT);
+        }
       }, 300);
     }
   }, [searchV]);
@@ -77,9 +91,16 @@ const Search = () => {
           if (e.keyCode === 83) {
             setShowSearch(true);
           }
-          if (e.keyCode === 70 && e.metaKey) {
-            e.preventDefault();
-            setShowSearch(true);
+          if (/windows|win32|win64/i.test(navigator.userAgent)) {
+            if (e.keyCode === 70 && e.ctrlKey) {
+              e.preventDefault();
+              setShowSearch(true);
+            }
+          } else {
+            if (e.keyCode === 70 && e.metaKey) {
+              e.preventDefault();
+              setShowSearch(true);
+            }
           }
         }
       }
@@ -150,6 +171,9 @@ const Search = () => {
 
           {searchRes.length ? (
             <div id="search-result">
+              <p>
+                为您找到相关结果<b>{total}</b>个
+              </p>
               {searchRes.map((item) => {
                 if (item.children.length) {
                   return (
