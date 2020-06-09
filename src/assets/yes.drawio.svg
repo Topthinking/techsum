@@ -1,11 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="200px" height="100px" viewBox="-0.5 -0.5 200 100" content="&lt;mxfile host=&quot;&quot; modified=&quot;2020-06-09T16:13:23.167Z&quot; agent=&quot;5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.45.1 Chrome/78.0.3904.130 Electron/7.2.4 Safari/537.36&quot; etag=&quot;YKrSPrI55KOjOjh-a1BX&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;jVXZrqM4EP0apJmXFjv4kT0kBEhIAuSNxewBAgQIXz+mk/Ttq1ZLIwEyp07ZVS77FEZJt1nrgjbbNzGsMBKPZ4ySMZLkOBx9V+D5AiiWfQFpl8cviPgCnHyBb/Dtlz7yGPbfiEPTVEPefgejpq5hNHzDgq5rpu+0pKm+r9oGKfwDcKKg+hN183jIXihPcl/4BuZp9lmZYMHLEgZRmXbNo36vh6HUOUEE6st8Cz5zvRPtsyBupt8gSsEoqWua4TW6zRKs1q39bNvLT/2L9VfcHayH/+NAvhzGoHq8U8cUFgMSBhhM4TAUt4AGAOMJDFCYQmOigPHvWvbD87NfKI12HfYDrKO8+qe6FMY5G0TZngKP8JZKPtaHkZV37ZI6jd4eCAbFtCGJKGAEbeCJwfXufHCvL/iDvVHFhKyUTAzm8wzGeSEpLkBIjN5olJmRDS72jhvVDIIckKZ7o27cfbkmwE9GorcRjYEb9OUxUkRP9Tg4jLfC6yxr/iodLYun3V22lroWVVVVraY9IS6Fxhk/r96JHXKqOnc9v63uNo2Mo9PqclI4wgJOZ/o4VHbDj85AbXC2zBPJIxLd21k68rWdoomSSjYFbZ1Q7NirlUvR+TkLXXEqESZoN6IgoXORVb80lkbdimKQ6xMxqqp2waci8gvWk7d8em8kCZ72dXFy9CsjxUd01tRbq5ZgTU40JielpsFrmdG4KCLd0CDeb5cZkdbErmyTerPFe/CkW4V+tJaCDbc7ZFEW5J7zaJNUl+7zwxnKtHKVS4/ViInvui2cpYmIdrrKx7c74qaBJ8NCMWscHP1e9ggLxc1ep8mMgrFuJHLwzyO1Ejvh+rR6+XDgSfmQVvhZ2A8l7WoyWfoiKzC7Zcvhd9MR8Et4fwhModDbxdfw7ajighGbjFv0BzwVWNd1VA8IvmPhh+NkFYbrUVUEzyhmfxP1xqmK+vta2MEu7HQvsY2oNiO7jXePw45ntURSnVtuwwy/WN2zPeNbXfJ0/1J0ox/7R2E4ln61ngxRIiYOVU5sddzRhUNiwLQkz3R2XNhLuzek/lIbDyXSrieJVi0Dj++agkuap5DtKXWSoySHmhvsr2Zjmr5+1m3DJXXHjP0gG+1gryzMbNgTvK6lX+t/uAeUCYEonP2bFS5WISDQWrIyRUFs1cfT3w+meRNPD1rd3Xn8XD/dJRbc8hhsQ6ak1UxzSNzXl0uY+znyIY+64/AmnuaSj26oqo0nbrnHc3lx6HgxNunuWRxO9gR2oTBL6GpKJLmB3Jycj5fYTFmzJKVTMUJItBElNvPUxoRuoInyEl77jR6q3VmhgqLblEhFaHbLCjHwQq53bI5ivF5E2yjyujqK5TGZDshxDLM0Mdytggy9yoe7B31Jcnj1iirJyDwA8bhhNWvDidB+rBpFivtaCjN8vevgFCY/hZGS/8UoMWnq4d0nKHL9z6tKaqqm+ylAFAA4TiMuOnpBnCPx+9jqpkY+4lvmYDfA+a9SSfwSYNTXYHODQ/dElI8Dxf9gcRwneQCQ3oOPdr5bHAA/UBQAUDxgaZ6m+Jd1+mofBOB/MGgCgiEZnuMB/tbR7LdOgij8SsFZnkA8in73tHc/S39F9aXpqxi8ZP3z+9U+ftp+a9GU8h8=&lt;/diagram&gt;&lt;/mxfile&gt;" style="background-color: rgb(103, 171, 159);">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="231px" height="131px" viewBox="-0.5 -0.5 231 131" content="&lt;mxfile host=&quot;&quot; modified=&quot;2020-06-09T16:32:45.969Z&quot; agent=&quot;5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.45.1 Chrome/78.0.3904.130 Electron/7.2.4 Safari/537.36&quot; etag=&quot;YXVLboOX_UYdcKS1h4DY&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;rVRNb6MwEP01vlZ8BAjHQEl76SmHPa4MdsCqwciYQPrrd4xNgKWRutLmkMy8+bBn3nOQn9bjm8Rt9SEI5chzyIj8V+R5UeTAtwbuBvDD0AClZMRA7gJc2Be1oK0re0Zot0lUQnDF2i1YiKahhdpgWEoxbNOugm9PbXFJd8ClwHyP/mJEVQY9etGCv1NWVvPJbhibSI6Lz1KKvrHnNaKhJlLjuY2dsaswEcMK8jPkp1IIZax6TCnXW503ZurOT6KPK0vaqJ8UBKbghnlvp0ZeyKE0IewGZqnNGcrl3wg03uRNI6n7vMGhYopeWlxofwCRQFKlag6eCyYM3+pIPZZaQC857ljxUnDRk99AA/zqrlfRqDOuGdcyesMS10IvdsKtaHzYW4I5KxtwChidSp3AOE8FF3K6jO/m2KU6sVNSfNJVxHHC7HS2LVf4dfo8BrtRqej4dNHugz54EFTUVMk7pNgCL7CM28fgHqw/LNKCmxisWstqBrGVc/novfAKhqX2e5rDPc1ZiOIUxQHKIhSf0QmMGB1dFPsoO6DkhI7hjk8YX20p3C1dL4kBeScbqBkhujyRtGNfOJ9aOeC3gjVqGilIUPCqe/VKdIZQ9xt+n+ngf5ATB1tyoj05D8LW5Bz+nRtwl+c9xVb/nn72Bw==&lt;/diagram&gt;&lt;/mxfile&gt;">
     <defs/>
     <g>
-        <path d="M 87 0.4 L 84.88 1.73 L 76.44 2.32 L 62.09 4.51 L 56.29 5.7 L 46.9 7.6 L 37.1 9.6 L 27.61 11.8 L 19.51 14.2 L 12.4 16.9 L 8.49 19.4 L 6.09 22 L 4.11 24.8 L 2.6 27.9 L 1.6 31.2 L 0.69 34.7 L 0.1 38.4 L -0.3 42.4 L -0.4 46.3 L -0.3 50.2 L 0.1 53.9 L 0.79 57.6 L 2 61.1 L 3.49 64.6 L 5.5 68.3 L 7.8 71.6 L 10.5 75 L 13.4 78.1 L 16.29 81 L 20.11 83.6 L 24.49 86.3 L 29.3 88.8 L 35.19 90.8 L 42.5 92.7 L 50.1 94.3 L 60.3 95.7 L 72.71 97 L 84.8 98.1 L 98.1 98.8 L 111 99.2 L 124.1 99.2 L 136.8 98.7 L 149.61 97.6 L 160.4 95.7 L 169.4 93.1 L 177.79 89.8 L 184.01 86.1 L 189.9 81.7 L 193.99 77.1 L 196.69 72.2 L 198.1 67 L 198 61.9 L 196.81 56.9 L 194.9 52.2 L 192.4 47.3 L 189.41 42.8 L 185.99 38.3 L 181.8 34 L 177.5 30.1 L 173.11 26.6 L 168.5 23.5 L 163.8 20.6 L 159 18 L 154.09 15.5 L 149.31 13.4 L 144.9 11.7 L 140.1 10.2 L 135.59 9 L 131.01 8 L 126.3 7 L 121.7 6.3 L 116.89 5.8 L 111.99 5.4 L 107.21 5 L 102.9 4.8 L 98.79 4.6 L 95.3 4.4 L 92.1 4.4 L 89.3 4.4 L 87 4.4 L 84.8 4.4 L 82.49 4.4 L 80.09 4.4 L 77.49 4.4 L 74.99 4.4 L 71.99 4.4 L 68.6 4.4" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
-        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="32px">
-            <text x="98.35" y="64.3">
-                朕知道了
-            </text>
+        <path d="M 30.78 67.33 C 22.32 69.94 12.8 67.61 7.4 61.59 C 2 55.58 2 47.32 7.4 41.31 C 12.8 35.29 22.32 32.96 30.78 35.57 C 30.72 24.98 38.55 15.46 50.44 11.69 C 62.33 7.92 75.79 10.69 84.21 18.63 C 89.61 7.37 102.71 -0.01 117.28 -0.01 C 131.84 -0.01 144.94 7.37 150.35 18.63 C 158.99 12.15 171.32 10.32 182.13 13.91 C 192.93 17.51 200.34 25.91 201.23 35.57 C 209.69 32.96 219.2 35.29 224.61 41.31 C 230.01 47.32 230.01 55.58 224.61 61.59 C 219.2 67.61 209.69 69.94 201.23 67.33 C 200.31 77.54 192.11 86.29 180.44 89.53 C 168.77 92.77 155.9 89.86 147.8 82.15 C 141.37 91.07 129.78 96.52 117.28 96.52 C 104.78 96.52 93.19 91.07 86.75 82.15 C 80.6 92.44 63.09 97.46 47.64 93.37 C 32.18 89.28 24.64 77.62 30.78 67.33 Z" fill="#1ba1e2" stroke="#006eaf" stroke-linejoin="round" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="0" y="0" width="0" height="0" fill="none" stroke="#006eaf" pointer-events="all"/>
+        <ellipse cx="38.41" cy="103.32" rx="15.263798252405708" ry="5.716612377850163" fill="#1ba1e2" stroke="#006eaf" pointer-events="all"/>
+        <ellipse cx="20.61" cy="117.08" rx="9.667072226523615" ry="3.8110749185667756" fill="#1ba1e2" stroke="#006eaf" pointer-events="all"/>
+        <ellipse cx="6.11" cy="127.25" rx="6.105519300962283" ry="2.7524429967426713" fill="#1ba1e2" stroke="#006eaf" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 65px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 32px; font-family: Garamond; color: #ffffff; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="115" y="75" fill="#ffffff" font-family="Garamond" font-size="32px" text-anchor="middle">
+                    &#xa;
+                </text>
+            </switch>
+        </g>
+        <rect x="45" y="30" width="140" height="40" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 50px; margin-left: 115px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 32px; font-family: Garamond; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                朕知道了
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="115" y="60" fill="#000000" font-family="Garamond" font-size="32px" text-anchor="middle">
+                    朕知道了
+                </text>
+            </switch>
         </g>
     </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://desk.draw.io/support/solutions/articles/16000042487" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
 </svg>

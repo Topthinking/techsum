@@ -31,6 +31,12 @@
       top: 120px;
       right: 300px;
     }
+    .guide-yes {
+      position: fixed;
+      top: 196px;
+      right: 400px;
+      transform: rotateX(40deg);
+    }
   }
 
   .mask-guide-add {
@@ -45,6 +51,12 @@
       position: fixed;
       top: 51px;
       left: 390px;
+    }
+    .guide-yes {
+      position: fixed;
+      top: 176px;
+      left: 200px;
+      transform: rotateX(40deg);
     }
   }
   .mask-guide-add.pipeline {

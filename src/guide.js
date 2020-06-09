@@ -10,7 +10,7 @@ const Guide = () => {
   const { state, dispatch } = React.useContext(Context);
 
   React.useEffect(() => {
-    localStorage.clear();
+    // localStorage.clear();
     const tag = localStorage.getItem(state.config.localStorage);
     if (!tag) {
       localStorage.setItem(state.config.localStorage, 1);
@@ -29,10 +29,12 @@ const Guide = () => {
     <div
       className="guide"
       onClick={() => {
-        dispatch({
-          type: "changeGuide",
-          payload: state.guide + 1,
-        });
+        if (!state.config["guide-button"]) {
+          dispatch({
+            type: "changeGuide",
+            payload: state.guide + 1,
+          });
+        }
       }}
     >
       <div className="mask"></div>
@@ -42,7 +44,18 @@ const Guide = () => {
           <p>
             快来搜索您需要的技术指导，键盘快捷键【S】即可快速唤起，支持拼音搜索哦~~
           </p>
-          <img src={yes} />
+          {state.config["guide-button"] ? (
+            <img
+              src={yes}
+              className="guide-yes"
+              onClick={() => {
+                dispatch({
+                  type: "changeGuide",
+                  payload: state.guide + 1,
+                });
+              }}
+            />
+          ) : null}
         </div>
       ) : null}
       {state.guide === 1 ? (
@@ -53,6 +66,18 @@ const Guide = () => {
         >
           <img src={addSvg} />
           <p>快来分享您的技术清单</p>
+          {state.config["guide-button"] ? (
+            <img
+              src={yes}
+              className="guide-yes"
+              onClick={() => {
+                dispatch({
+                  type: "changeGuide",
+                  payload: state.guide + 1,
+                });
+              }}
+            />
+          ) : null}
         </div>
       ) : null}
     </div>
