@@ -24,10 +24,12 @@ const Aside = () => {
           title={state.config.addDesc}
           onClick={(e) => {
             if (state.guide === 1) {
-              dispatch({
-                type: "changeGuide",
-                payload: state.guide + 1,
-              });
+              if (!state.config["guide-button"]) {
+                dispatch({
+                  type: "changeGuide",
+                  payload: state.guide + 1,
+                });
+              }
               e.stopPropagation();
               e.preventDefault();
               return false;

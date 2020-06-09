@@ -129,10 +129,12 @@ const Search = () => {
         onClick={() =>
           state.guide !== 0
             ? setShowSearch(true)
-            : dispatch({
+            : !state.config["guide-button"]
+            ? dispatch({
                 type: "changeGuide",
                 payload: state.guide + 1,
               })
+            : null
         }
       >
         <svg viewBox="0 0 20 20" data-type="search" className="icon">
