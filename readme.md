@@ -1,5 +1,7 @@
 # Technical Summary ∙ [![version](https://img.shields.io/npm/v/techsum.svg)](https://www.npmjs.com/package/techsum)
 
+## 基于`award`框架的技术摘要文档系统
+
 ## 使用说明
 
 ```shell
