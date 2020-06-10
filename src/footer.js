@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Context } from "../store";
 
 <award-style>{`
 	footer{
@@ -24,7 +25,9 @@ import * as React from "react";
 	}
 `}</award-style>;
 
-export default () => {
+const Footer = () => {
+  const { state } = React.useContext(Context);
+
   return (
     <footer className="bottom-container">
       <a
@@ -36,8 +39,10 @@ export default () => {
           src="http://thoughtsweb.ximalaya.com/static/images/logo.c7c3d8a3.svg"
           className="logo-icon__3g49"
         />
-        <span>源自 techsum </span>
+        <span>源自 techsum@{state.config.version} </span>
       </a>
     </footer>
   );
 };
+
+export default Footer;

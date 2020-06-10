@@ -6,9 +6,11 @@ const pinyin = require("pinyin");
 const args = process.argv.slice(2);
 const docs = path.join(args[0], "docs");
 const yamlFile = path.join(args[0], ".yaml");
+const pkg = require(path.join(__dirname, "package.json"));
 
 function parseYaml() {
   const res = Yaml.parse(fs.readFileSync(yamlFile, "utf8"));
+  res.version = pkg.version;
   fs.writeFileSync(
     path.join(__dirname, ".meta.js"),
     `module.exports = ${JSON.stringify(res)}`,
