@@ -55,7 +55,10 @@ const Search = () => {
                     }
                   });
                 });
-                if (new RegExp(ref.current, "i").test(st)) {
+                if (
+                  !/http(s)?\:\/\//.test(st) &&
+                  new RegExp(ref.current, "i").test(st)
+                ) {
                   exist = true;
                 }
               });
