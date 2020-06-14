@@ -3,14 +3,18 @@ import { Context } from "../store";
 
 <award-style>{`
 	footer{
-		text-align:center;
+		text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
 		a{
 			text-decoration: none;
 		}
 		.logo-content{
 			color: #8c8c8c;
 			font-size: 16px;
-			border-top: 1px solid #e5e5e5;
 			display: flex;
 			flex: 0 0 auto;
 			justify-content: center;
@@ -22,6 +26,24 @@ import { Context } from "../store";
 		a:hover{
 			color:#6e6dc3;
 		}
+		p{
+			color: #8c8c8c;
+			font-size: 10px;
+			margin-left: 10px;
+			margin-top: 5px;
+			.post-meta-divider{
+				margin-left:2px;
+				margin-right:2px;
+			}
+		}
+	}
+	.show{
+		color: #000;
+		padding: 0px 2px;
+		cursor:pointer;
+	}
+	.show:hover{
+		color:#6e6dc3;
 	}
 `}</award-style>;
 
@@ -41,6 +63,15 @@ const Footer = () => {
         />
         <span>源自 techsum@{state.config.version} </span>
       </a>
+      <p>
+        <span>
+          PV<span id="busuanzi_value_site_pv" className="show"></span>次
+        </span>
+        <span className="post-meta-divider">|</span>
+        <span>
+          UV<span id="busuanzi_value_site_uv" className="show"></span>人
+        </span>
+      </p>
     </footer>
   );
 };
