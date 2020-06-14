@@ -4,6 +4,10 @@
   "description": "",
   "homepage": "https://github.com/Topthinking/techsum",
   "bugs": "https://github.com/Topthinking/techsum/issues",
+  "scripts": {
+    "dev": "./test/ts dev",
+    "build": "./test/ts build"
+  },
   "bin": {
     "ts": "./bin/index.js"
   },
